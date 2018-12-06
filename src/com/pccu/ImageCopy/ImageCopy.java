@@ -17,8 +17,8 @@ public class ImageCopy {
 		FileOutputStream fos = null;
 		
 		try {
-			fis = new FileInputStream("src/images/"+i);
-			fos = new FileOutputStream("src/images/"+o);
+			fis = new FileInputStream("src/"+i);
+			fos = new FileOutputStream("src/"+o);
 			int flag = 0;
 			while((flag = fis.read()) != -1) {
 				fos.write(flag);
@@ -40,8 +40,8 @@ public class ImageCopy {
 	
 	public static void main(String[] args) {
 		
-		Copy("pedobear.gif",
-			 "pedobear_2.gif"
+		Copy("documents/abstract1.txt",
+			 "documents/abstract1(1).txt"
 		);
 		
 	}
